@@ -5,8 +5,7 @@
 }
 html{
   height:100%;
-  -webkit-text-size-adjust: 100%;
-}
+  }
 body{
   margin:0;
   width: 100%;
@@ -14,10 +13,8 @@ body{
   background-color:#031936;
   font-family: 'Rubik', sans-serif;
   display: block;
-  -webkit-text-size-adjust: 100%;
-
 }
-  .dashboard{
+.dashboard{
     margin:0 auto;
     width:733px;
     height:533px;
@@ -85,6 +82,7 @@ body{
   color:hsl(235, 45%, 61%);
   font-size:2vw;
   display: block;
+  cursor:pointer;
 }
 .desc:hover{
   color: hsl(236, 100%, 87%);
@@ -150,7 +148,7 @@ body{
   float:right;
   width:30px;
 }
-#title{
+.title{
   color:white;
   margin-top:10px;
   padding:5px;
@@ -197,7 +195,6 @@ body{
   margin-top:10px;
   float:right;
 }
-
 .attribution { 
   margin-top:5vw;
   font-size: 1vw;
@@ -290,6 +287,279 @@ body{
      }
      .self-care{   
       width:250px;
+      height:55px;
+     }
+}
+@media screen and (max-width: 900px) {
+  body{
+    width:900px;
+    height:100vh;
+  }
+  .dashboard{
+    width:600px;
+    height:600px;
+    left:0;
+    top: 0;
+    right:0;
+    bottom:0;
+}
+.container{
+  margin-top: 160px;
+  margin-left:0px;
+  width:150px;
+  height:390px;
+  
+}
+.profile-box{
+  width:150px;
+  height:270px;
+  
+}
+.profile-img{
+  margin-top:30px;
+  margin-left:30px;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  }
+  .profile-info p{
+    margin-top:20px;
+    margin-left:40px;
+    font-size:13px;
+  }
+  .profile-info h3{
+    margin-left:40px;
+    font-size:22px;
+    font-weight:300;
+  }
+  .profile-info-desc{
+    margin-top:75px;
+    margin-left:30px;
+  }
+  .desc{
+    padding:5px;
+    font-size:16px;
+    
+  }
+  #grid-col {
+    top:190px;
+    margin-left:28%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: 150px  40%;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+    grid-template-columns: repeat(3, 150px);
+    
+  }
+  .cell {
+    width:150px;
+    height:150px;
+    }
+    .work{   
+      width:150px;
+      height:55px;
+     }
+     .play{   
+      width:150px;
+      height:55px;
+     } 
+     .study{   
+      width:150px;
+      height:55px;
+     } 
+     .exercise{   
+      width:150px;
+      height:55px;
+     }
+     .social{   
+      width:150px;
+      height:55px;
+     }
+     .self-care{   
+      width:150px;
+      height:55px;
+     }
+}
+@media screen and (max-width: 600px) {
+  body{
+    width:600px;
+    height:100vh;
+  }
+  .dashboard{
+    width:500px;
+    height:500px;
+    left:0;
+    top: 0;
+    right:0;
+    bottom:0;
+}
+.container{
+  margin-top: 120px;
+  margin-left:0px;
+  width:120px;
+  height:310px;
+  
+}
+.profile-box{
+  width:120px;
+  height:220px;
+  
+}
+.profile-img{
+  margin-top:20px;
+  margin-left:20px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  }
+  .profile-info p{
+    margin-top:20px;
+    margin-left:20px;
+    font-size:10px;
+  }
+  .profile-info h3{
+    margin-left:20px;
+    font-size:20px;
+    font-weight:300;
+  }
+  .profile-info-desc{
+    margin-top:65px;
+    margin-left:20px;
+  }
+  .desc{
+    padding:4px;
+    font-size:12px;
+    
+  }
+  #grid-col {
+    top:140px;
+    margin-left:28%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: 120px  40%;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    grid-template-columns: repeat(3, 130px);
+    
+  }
+  .cell {
+    width:120px;
+    height:120px;
+    }
+    .work{   
+      width:120px;
+      height:55px;
+     }
+     .play{   
+      width:120px;
+      height:55px;
+     } 
+     .study{   
+      width:120px;
+      height:55px;
+     } 
+     .exercise{   
+      width:120px;
+      height:55px;
+     }
+     .social{   
+      width:120px;
+      height:55px;
+     }
+     .self-care{   
+      width:120px;
+      height:55px;
+     }
+}
+@media screen and (max-width: 375px) {
+   body{
+    width:375px;
+    height:100vh;
+  }
+  .dashboard{
+    width:375px;
+    height:500px;
+    left:0;
+    top: 0;
+    right:0;
+    bottom:0;
+}
+.container{
+  margin-top: 100px;
+  margin-left:0px;
+  width:100px;
+  height:310px;
+  
+}
+.profile-box{
+  width:100px;
+  height:220px;
+  
+}
+.profile-img{
+  margin-top:20px;
+  margin-left:20px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  }
+  .profile-info p{
+    margin-top:20px;
+    margin-left:20px;
+    font-size:10px;
+  }
+  .profile-info h3{
+    margin-left:20px;
+    font-size:20px;
+    font-weight:300;
+  }
+  .profile-info-desc{
+    margin-top:65px;
+    margin-left:20px;
+  }
+  .desc{
+    padding:4px;
+    font-size:12px;
+    
+  }
+  #grid-col {
+    top:140px;
+    margin-left:28%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-columns: 100px  30%;
+    grid-column-gap: 10px;
+    grid-row-gap: 35px;
+    grid-template-columns: repeat(3, 100px);
+    
+  }
+  .cell {
+    width:100px;
+    height:100px;
+    }
+    .work{   
+      width:100px;
+      height:55px;
+     }
+     .play{   
+      width:100px;
+      height:55px;
+     } 
+     .study{   
+      width:100px;
+      height:55px;
+     } 
+     .exercise{   
+      width:100px;
+      height:55px;
+     }
+     .social{   
+      width:100px;
+      height:55px;
+     }
+     .self-care{   
+      width:100px;
       height:55px;
      }
 }
