@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
@@ -20,7 +19,7 @@
 </head>
 
 <body>
-  <div  id="panel"class="dashboard">
+  <div id="panel" class="dashboard">
     <div class="container">
       <div class="profile-box">
         <div class="profile-info">
@@ -30,9 +29,9 @@
           <p>Report for</p>
           <h3>Jeremy <br> Robson</h3>
           <div id="myDIV" class="profile-info-desc">
-            <h4 class="desc">Daily</h4>
-            <h4 class="desc">Weekly</h4>
-            <h4 class="desc">Monthly</h4>
+            <h4 class="desc" id="daily">Daily</h4>
+            <h4 class="desc" id="weekly">Weekly</h4>
+            <h4 class="desc" id="monthly">Monthly</h4>
           </div>
         </div>
       </div>
@@ -49,7 +48,8 @@
           src="https://raw.githubusercontent.com/zaklinaradivojevic/time-tracking-dashboard/507ecfab9f571a936e982ceec443ae0c8f7f19ec/images/icon-ellipsis.svg"
           alt="icon-ellipsis">
         <div>
-
+          <div id="work-info">
+          </div>
         </div>
       </div>
       <div id="cell2" class="cell">
@@ -62,6 +62,9 @@
         <img class="cell-dot"
           src="https://raw.githubusercontent.com/zaklinaradivojevic/time-tracking-dashboard/507ecfab9f571a936e982ceec443ae0c8f7f19ec/images/icon-ellipsis.svg"
           alt="icon-ellipsis">
+        <div id="play-info">
+
+        </div>
       </div>
       <div id="cell3" class="cell">
         <div class="study">
@@ -74,6 +77,9 @@
           <img class="cell-dot"
             src="https://raw.githubusercontent.com/zaklinaradivojevic/time-tracking-dashboard/507ecfab9f571a936e982ceec443ae0c8f7f19ec/images/icon-ellipsis.svg"
             alt="icon-ellipsis">
+          <div id="study-info">
+
+          </div>
         </div>
       </div>
       <div id="cell4" class="cell">
@@ -87,6 +93,9 @@
           <img class="cell-dot"
             src="https://raw.githubusercontent.com/zaklinaradivojevic/time-tracking-dashboard/507ecfab9f571a936e982ceec443ae0c8f7f19ec/images/icon-ellipsis.svg"
             alt="icon-ellipsis">
+          <div id="exercise-info">
+
+          </div>
         </div>
       </div>
       <div id="cell5" class="cell">
@@ -100,6 +109,9 @@
           <img class="cell-dot"
             src="https://raw.githubusercontent.com/zaklinaradivojevic/time-tracking-dashboard/507ecfab9f571a936e982ceec443ae0c8f7f19ec/images/icon-ellipsis.svg"
             alt="icon-ellipsis">
+          <div id="social-info">
+
+          </div>
         </div>
       </div>
       <div id="cell6" class="cell">
@@ -113,6 +125,9 @@
           <img class="cell-dot"
             src="https://raw.githubusercontent.com/zaklinaradivojevic/time-tracking-dashboard/507ecfab9f571a936e982ceec443ae0c8f7f19ec/images/icon-ellipsis.svg"
             alt="icon-ellipsis">
+          <div id="self-care-info">
+
+          </div>
         </div>
       </div>
     </div>
@@ -121,7 +136,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Zaklina Radivojevic</a>.
   </div>
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
+
 </body>
 
 </html>

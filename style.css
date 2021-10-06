@@ -16,8 +16,8 @@ body{
 }
 .dashboard{
     margin:0 auto;
-    width:733px;
-    height:533px;
+    width:70%;
+    height:70%;
     z-index:-999;
     
 }
@@ -198,8 +198,74 @@ body{
   margin-top:10px;
   float:right;
 }
+#work-info {
+  color:white;
+}
+#work-info h1{
+  color:white;
+}
+#work-info p{
+  padding: 5px;
+  color:white;
+  font-size:small;
+}
+#play-info{
+  color:white;
+}
+#play-info h1{
+  color:white;
+}
+#play-info p{
+  padding: 5px;
+  color:white;
+  font-size: small;
+}
+#study-info{
+  color:white;
+}
+#study-info h1{
+  color:white;
+}
+#study-info p{
+  padding: 5px;
+  color:white;
+  font-size: small;
+}
+#exercise-info{
+  color:white;
+}
+#exercise-info h1{
+  color:white;
+}
+#exercise-info p{
+  padding: 5px;
+  color:white;
+  font-size: small;
+}
+#social-info{
+  color:white;
+}
+#social-info h1{
+  color:white;
+}
+#social-info{
+  padding: 5px;
+  color:white;
+  font-size: small;
+}
+#self-care-info{
+  color:white;
+}
+#self-care-info h1{
+  color:white;
+}
+#self-care-info p{
+  padding: 5px;
+  color:white;
+  font-size: small;
+}
 .attribution { 
-  margin-top:5vw;
+  margin-top:10px;
   font-size: 1vw;
   text-align: center; 
 }
