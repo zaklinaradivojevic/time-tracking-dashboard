@@ -1,634 +1,400 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-  height:100%;
-  }
-body{
-  margin:0;
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
   width: 100%;
   height: 100%;
-  background-color:#031936;
-  font-family: 'Rubik', sans-serif;
+  background-color: #031936;
+  font-family: "Rubik", sans-serif;
+  display: block;
+  -webkit-text-size-adjust: 100%;
+}
+.dashboard {
+  margin: 0 auto;
+  width: 733px;
+  height: 533px;
+  z-index: -999;
+  position: relative;
+}
+.container {
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 20vw;
+  height: 46.8vh;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1.18vw;
+  position: absolute;
+}
+.profile-box {
+  width: 19.44vw;
+  height: 29vh;
+  background-color: hsl(228, 45%, 44%);
+  border-radius: 1.17vw;
+}
+.profile-img {
+  margin-top: 5.13vw;
+  margin-left: 2.34vw;
+  width: 9.72vw;
+  height: 8.72vh;
+  border: 0.16vw solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+.profile-info {
   display: block;
 }
-.dashboard{
-    margin:0 auto;
-    width:70%;
-    height:70%;
-    z-index:-999;
-    
+.profile-img:hover {
+  opacity: 0.7;
 }
-.container{
-  margin-top:10%;
-  margin-left:5%;
-  width:20vw;
-  height:46.8vh;
-  background-color:hsl(235, 46%, 20%);
-  border-radius:1.18vw;
-  
-}
-.profile-box{
-  width:19.44vw;
-  height:29vh;
-  background-color:hsl(228, 45%, 44%);
-  border-radius:1.17vw;
-}
-.profile-img{
-  margin-top:5.13vw;
-  margin-left:2.34vw;
-  width:9.72vw;
-  height:8.72vh;
-  border:0.16vw solid white;
-  border-radius:50%;
-  background-color:white;
-  }
-.profile-info{
+.profile-info p {
+  margin-top: 2.56vw;
+  margin-bottom: 0.4vw;
+  margin-left: 2.34vw;
+  font-size: 0.94vw;
+  color: hsl(236, 100%, 87%);
   display: block;
 }
-.profile-img:hover{
-  opacity:0.7;
+.profile-info p:hover {
+  opacity: 0.7;
 }
-.profile-info p{
-  margin-top:2.56vw;
-  margin-bottom:0.4vw;
-  margin-left:2.34vw;
-  font-size:0.94vw;
-  color:hsl(236, 100%, 87%);
+.profile-info h3 {
+  margin-left: 2.34vw;
+  font-size: 3.19vw;
+  color: white;
+  font-weight: 300;
   display: block;
 }
-.profile-info p:hover{
-  opacity:0.7;
+.profile-info h3:hover {
+  opacity: 0.7;
 }
-.profile-info h3{
-  margin-left:2.34vw;
-  font-size:3.19vw;
-  color:white;
-  font-weight:300;
+.profile-info-desc {
+  margin-top: 45px;
+  margin-left: 2.4vw;
   display: block;
 }
-.profile-info h3:hover{
-  opacity:0.7;
-}
-.profile-info-desc{
-  margin-top:45px;
-  margin-left:2.4vw;
+.desc {
+  padding: 0.4vh;
+  color: hsl(235, 45%, 61%);
+  font-size: 2vw;
   display: block;
 }
-.desc{
-  padding:0.4vh;
-  color:hsl(235, 45%, 61%);
-  font-size:2vw;
-  display: block;
-  cursor:pointer;
-}
-.desc:hover{
+.desc:hover {
   color: hsl(236, 100%, 87%);
 }
-.active{
-  color:white;
+.active {
+  color: white;
 }
 #grid-col {
-  top:17%;
-  margin-left:28%;
+  top: 17%;
+  margin-left: 28%;
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-columns: 130px  50%;
+  grid-template-columns: 130px 50%;
   grid-column-gap: 10px;
   grid-row-gap: 33px;
   grid-template-columns: repeat(3, 130px);
-  float:right;
-  position:absolute;
+  float: right;
+  position: absolute;
 }
 .cell {
-  width:130px;
-  height:130px;
+  width: 130px;
+  height: 130px;
   background-color: hsl(235, 46%, 20%);
   padding: 0.78vw;
-  border-radius:1.86vw;
-  position:relativ;
-  
-  }
-.work{ 
- margin-top:-4vw;
- margin-left:-0.8vw;  
- padding: 0.78vw;
- width:130px;
- height:32px;
- background-color:hsl(15, 100%, 70%); 
- border-top-left-radius: 1.76vw;
- border-top-right-radius: 1.76vw;
- z-index:-999;
- position:absolute;
+  border-radius: 1.86vw;
+  position: relativ;
 }
-.play{
-  margin-top:-4vw;
-  margin-left:-0.8vw;  
+.work {
+  margin-top: -4vw;
+  margin-left: -0.8vw;
   padding: 0.78vw;
-  width:130px;
-  height:32px;
- position:absolute;
- background-color: hsl(195, 74%, 62%); 
- border-top-left-radius: 1.76vw;
- border-top-right-radius: 1.76vw;
- z-index:-999;
+  width: 130px;
+  height: 32px;
+  background-color: hsl(15, 100%, 70%);
+  border-top-left-radius: 1.76vw;
+  border-top-right-radius: 1.76vw;
+  z-index: -999;
+  position: absolute;
 }
-.study{
-  margin-top:-4vw;
-  margin-left:-0.8vw;  
+.play {
+  margin-top: -4vw;
+  margin-left: -0.8vw;
   padding: 0.78vw;
-  width:130px;
- height:32px;
- position:absolute;
- background-color: hsl(348, 100%, 68%); 
- border-top-left-radius: 1.76vw;
- border-top-right-radius: 1.76vw;
- z-index:-999;
+  width: 130px;
+  height: 32px;
+  position: absolute;
+  background-color: hsl(195, 74%, 62%);
+  border-top-left-radius: 1.76vw;
+  border-top-right-radius: 1.76vw;
+  z-index: -999;
 }
-.cell-img{
-  float:right;
-  width:30px;
-}
-.title{
-  color:white;
-  margin-top:10px;
-  padding:5px;
-  float:left;
-  font-size:1.5vw;
-}
-.exercise{
-  margin-top:-4vw;
-  margin-left:-0.8vw;  
+.study {
+  margin-top: -4vw;
+  margin-left: -0.8vw;
   padding: 0.78vw;
-  width:130px;
-  height:32px;
- position:absolute;
- background-color:hsl(145, 58%, 55%); 
- border-top-left-radius: 1.76vw;
- border-top-right-radius: 1.76vw;
- z-index:-999;
+  width: 130px;
+  height: 32px;
+  position: absolute;
+  background-color: hsl(348, 100%, 68%);
+  border-top-left-radius: 1.76vw;
+  border-top-right-radius: 1.76vw;
+  z-index: -999;
 }
-.social{
-  margin-top:-4vw;
-  margin-left:-0.8vw;  
+.cell-img {
+  float: right;
+  width: 30px;
+}
+#title {
+  color: white;
+  margin-top: 10px;
+  padding: 5px;
+  float: left;
+  font-size: 1.5vw;
+}
+.exercise {
+  margin-top: -4vw;
+  margin-left: -0.8vw;
   padding: 0.78vw;
-  width:130px;
-  height:32px;
- position:absolute;
- background-color:hsl(264, 64%, 52%); 
- border-top-left-radius: 1.76vw;
- border-top-right-radius: 1.76vw;
- z-index:-999;
+  width: 130px;
+  height: 32px;
+  position: absolute;
+  background-color: hsl(145, 58%, 55%);
+  border-top-left-radius: 1.76vw;
+  border-top-right-radius: 1.76vw;
+  z-index: -999;
 }
-.self-care{
-  margin-top:-4vw;
-  margin-left:-0.8vw;  
+.social {
+  margin-top: -4vw;
+  margin-left: -0.8vw;
   padding: 0.78vw;
-  width:130px;
-  height:32px;
- position:absolute;
- background-color:hsl(43, 84%, 65%); 
- border-top-left-radius: 1.76vw;
- border-top-right-radius: 1.76vw;
- z-index:-999;
+  width: 130px;
+  height: 32px;
+  position: absolute;
+  background-color: hsl(264, 64%, 52%);
+  border-top-left-radius: 1.76vw;
+  border-top-right-radius: 1.76vw;
+  z-index: -999;
 }
-.cell-dot{
-  margin-top:10px;
-  float:right;
+.self-care {
+  margin-top: -4vw;
+  margin-left: -0.8vw;
+  padding: 0.78vw;
+  width: 130px;
+  height: 32px;
+  position: absolute;
+  background-color: hsl(43, 84%, 65%);
+  border-top-left-radius: 1.76vw;
+  border-top-right-radius: 1.76vw;
+  z-index: -999;
+}
+.cell-dot {
+  margin-top: 10px;
+  float: right;
 }
 #work-info {
-  color:white;
+  margin: 50px;
+  margin-left: 40px;
 }
-#work-info h1{
-  color:white;
+#work-info p {
+  margin-bottom: 10px;
+  color: hsl(236, 100%, 87%);
 }
-#work-info p{
-  padding: 5px;
-  color:white;
-  font-size:small;
+#play-info {
+  margin: 50px;
+  margin-left: 40px;
 }
-#play-info{
-  color:white;
+#play-info p {
+  margin-bottom: 10px;
+  color: hsl(236, 100%, 87%);
 }
-#play-info h1{
-  color:white;
+#study-info {
+  margin: 50px;
+  margin-left: 40px;
 }
-#play-info p{
-  padding: 5px;
-  color:white;
-  font-size: small;
+#study-info p {
+  margin-bottom: 10px;
+  color: hsl(236, 100%, 87%);
 }
-#study-info{
-  color:white;
+#exercise-info {
+  margin: 50px;
+  margin-left: 40px;
 }
-#study-info h1{
-  color:white;
+#exercise-info p {
+  margin-bottom: 10px;
+  color: hsl(236, 100%, 87%);
 }
-#study-info p{
-  padding: 5px;
-  color:white;
-  font-size: small;
+#social-info {
+  margin: 50px;
+  margin-left: 40px;
 }
-#exercise-info{
-  color:white;
+#social-info p {
+  margin-bottom: 10px;
+  color: hsl(236, 100%, 87%);
 }
-#exercise-info h1{
-  color:white;
+#self-care-info {
+  margin: 50px;
+  margin-left: 40px;
 }
-#exercise-info p{
-  padding: 5px;
-  color:white;
-  font-size: small;
+#self-care-info p {
+  margin-bottom: 10px;
+  color: hsl(236, 100%, 87%);
 }
-#social-info{
-  color:white;
-}
-#social-info h1{
-  color:white;
-}
-#social-info{
-  padding: 5px;
-  color:white;
-  font-size: small;
-}
-#self-care-info{
-  color:white;
-}
-#self-care-info h1{
-  color:white;
-}
-#self-care-info p{
-  padding: 5px;
-  color:white;
-  font-size: small;
-}
-.attribution { 
-  margin-top:10px;
+.attribution {
+  margin-top: 5vw;
   font-size: 1vw;
-  text-align: center; 
+  text-align: center;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 @media screen and (max-width: 1440px) {
-  body{
-    width:1440px;
+  body {
+    width: 1440px;
   }
-  .dashboard{
-    margin:0 auto;
-    width:1200px;
-    height:950px; 
-}
-.container{
-  margin:0 auto;
-  margin-top: 250px;
-  margin-left:0px;
-  width:250px;
-  height:520px;
-  
-}
-.profile-box{
-  width:250px;
-  height:350px;
-  
-}
-.profile-img{
-  margin-top:40px;
-  margin-left:40px;
-  width:80px;
-  height:80px;
-  border-radius:50%;
+  .dashboard {
+    margin: 0 auto;
+    width: 1200px;
+    height: 950px;
   }
-  .profile-info p{
-    margin-top:40px;
-    margin-left:40px;
-    font-size:14px;
+  .container {
+    margin: 0 auto;
+    margin-top: 250px;
+    margin-left: 0px;
+    width: 250px;
+    height: 520px;
   }
-  .profile-info h3{
-    margin-left:40px;
-    font-size:40px;
-    font-weight:300;
+  .profile-box {
+    width: 250px;
+    height: 350px;
   }
-  .profile-info-desc{
-    margin-top:85px;
-    margin-left:30px;
+  .profile-img {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
   }
-  .desc{
-    padding:10px;
-    font-size:20px;
-    
+  .profile-info p {
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 14px;
+  }
+  .profile-info h3 {
+    margin-left: 40px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .profile-info-desc {
+    margin-top: 85px;
+    margin-left: 30px;
+  }
+  .desc {
+    padding: 10px;
+    font-size: 20px;
   }
   #grid-col {
-    top:300px;
-    margin-left:23%;
+    top: 300px;
+    margin-left: 23%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-columns: 250px  50%;
+    grid-template-columns: 250px 50%;
     grid-column-gap: 40px;
     grid-row-gap: 80px;
     grid-template-columns: repeat(3, 250px);
-    
   }
   .cell {
-    width:250px;
-    height:190px;
-    }
-    .work{   
-      width:250px;
-      height:55px;
-     }
-     .play{   
-      width:250px;
-      height:55px;
-     } 
-     .study{   
-      width:250px;
-      height:55px;
-     } 
-     .exercise{   
-      width:250px;
-      height:55px;
-     }
-     .social{   
-      width:250px;
-      height:55px;
-     }
-     .self-care{   
-      width:250px;
-      height:55px;
-     }
+    width: 250px;
+    height: 190px;
+    color: white;
+  }
+  .work {
+    width: 250px;
+    height: 55px;
+  }
+  .play {
+    width: 250px;
+    height: 55px;
+  }
+  .study {
+    width: 250px;
+    height: 55px;
+  }
+  .exercise {
+    width: 250px;
+    height: 55px;
+  }
+  .social {
+    width: 250px;
+    height: 55px;
+  }
+  .self-care {
+    width: 250px;
+    height: 55px;
+  }
+  #work-info {
+    margin: 50px;
+    margin-left: 40px;
+  }
+  #work-info p {
+    margin-bottom: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+  #play-info {
+    margin: 50px;
+    margin-left: 40px;
+  }
+  #play-info p {
+    margin-bottom: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+  #study-info {
+    margin: 50px;
+    margin-left: 40px;
+  }
+  #study-info p {
+    margin-bottom: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+  #exercise-info {
+    margin: 50px;
+    margin-left: 40px;
+  }
+  #exercise-info p {
+    margin-bottom: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+  #social-info {
+    margin: 50px;
+    margin-left: 40px;
+  }
+  #social-info p {
+    margin-bottom: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+  #self-care-info {
+    margin: 50px;
+    margin-left: 40px;
+  }
+  #self-care-info p {
+    margin-bottom: 10px;
+    color: hsl(236, 100%, 87%);
+  }
+}
+@media screen and (max-width: 1240px) {
 }
 @media screen and (max-width: 900px) {
-  body{
-    width:900px;
-    height:100vh;
-  }
-  .dashboard{
-    width:600px;
-    height:600px;
-    left:0;
-    top: 0;
-    right:0;
-    bottom:0;
-}
-.container{
-  margin-top: 160px;
-  margin-left:0px;
-  width:150px;
-  height:390px;
-  
-}
-.profile-box{
-  width:150px;
-  height:270px;
-  
-}
-.profile-img{
-  margin-top:30px;
-  margin-left:30px;
-  width:80px;
-  height:80px;
-  border-radius:50%;
-  }
-  .profile-info p{
-    margin-top:20px;
-    margin-left:40px;
-    font-size:13px;
-  }
-  .profile-info h3{
-    margin-left:40px;
-    font-size:22px;
-    font-weight:300;
-  }
-  .profile-info-desc{
-    margin-top:75px;
-    margin-left:30px;
-  }
-  .desc{
-    padding:5px;
-    font-size:16px;
-    
-  }
-  #grid-col {
-    top:190px;
-    margin-left:28%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-columns: 150px  40%;
-    grid-column-gap: 30px;
-    grid-row-gap: 60px;
-    grid-template-columns: repeat(3, 150px);
-    
-  }
-  .cell {
-    width:150px;
-    height:150px;
-    }
-    .work{   
-      width:150px;
-      height:55px;
-     }
-     .play{   
-      width:150px;
-      height:55px;
-     } 
-     .study{   
-      width:150px;
-      height:55px;
-     } 
-     .exercise{   
-      width:150px;
-      height:55px;
-     }
-     .social{   
-      width:150px;
-      height:55px;
-     }
-     .self-care{   
-      width:150px;
-      height:55px;
-     }
 }
 @media screen and (max-width: 600px) {
-  body{
-    width:600px;
-    height:100vh;
-  }
-  .dashboard{
-    width:500px;
-    height:500px;
-    left:0;
-    top: 0;
-    right:0;
-    bottom:0;
 }
-.container{
-  margin-top: 120px;
-  margin-left:0px;
-  width:120px;
-  height:310px;
-  
-}
-.profile-box{
-  width:120px;
-  height:220px;
-  
-}
-.profile-img{
-  margin-top:20px;
-  margin-left:20px;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  }
-  .profile-info p{
-    margin-top:20px;
-    margin-left:20px;
-    font-size:10px;
-  }
-  .profile-info h3{
-    margin-left:20px;
-    font-size:20px;
-    font-weight:300;
-  }
-  .profile-info-desc{
-    margin-top:65px;
-    margin-left:20px;
-  }
-  .desc{
-    padding:4px;
-    font-size:12px;
-    
-  }
-  #grid-col {
-    top:140px;
-    margin-left:28%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-columns: 120px  40%;
-    grid-column-gap: 10px;
-    grid-row-gap: 40px;
-    grid-template-columns: repeat(3, 130px);
-    
-  }
-  .cell {
-    width:120px;
-    height:120px;
-    }
-    .work{   
-      width:120px;
-      height:55px;
-     }
-     .play{   
-      width:120px;
-      height:55px;
-     } 
-     .study{   
-      width:120px;
-      height:55px;
-     } 
-     .exercise{   
-      width:120px;
-      height:55px;
-     }
-     .social{   
-      width:120px;
-      height:55px;
-     }
-     .self-care{   
-      width:120px;
-      height:55px;
-     }
+@media screen and (max-width: 400px) {
 }
 @media screen and (max-width: 375px) {
-   body{
-    width:375px;
-    height:100vh;
-  }
-  .dashboard{
-    width:375px;
-    height:500px;
-    left:0;
-    top: 0;
-    right:0;
-    bottom:0;
-}
-.container{
-  margin-top: 100px;
-  margin-left:0px;
-  width:100px;
-  height:310px;
-  
-}
-.profile-box{
-  width:100px;
-  height:220px;
-  
-}
-.profile-img{
-  margin-top:20px;
-  margin-left:20px;
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  }
-  .profile-info p{
-    margin-top:20px;
-    margin-left:20px;
-    font-size:10px;
-  }
-  .profile-info h3{
-    margin-left:20px;
-    font-size:20px;
-    font-weight:300;
-  }
-  .profile-info-desc{
-    margin-top:65px;
-    margin-left:20px;
-  }
-  .desc{
-    padding:4px;
-    font-size:12px;
-    
-  }
-  #grid-col {
-    top:140px;
-    margin-left:28%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-columns: 100px  30%;
-    grid-column-gap: 10px;
-    grid-row-gap: 35px;
-    grid-template-columns: repeat(3, 100px);
-    
-  }
-  .cell {
-    width:100px;
-    height:100px;
-    }
-    .work{   
-      width:100px;
-      height:55px;
-     }
-     .play{   
-      width:100px;
-      height:55px;
-     } 
-     .study{   
-      width:100px;
-      height:55px;
-     } 
-     .exercise{   
-      width:100px;
-      height:55px;
-     }
-     .social{   
-      width:100px;
-      height:55px;
-     }
-     .self-care{   
-      width:100px;
-      height:55px;
-     }
 }
